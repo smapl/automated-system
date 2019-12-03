@@ -6,6 +6,8 @@ authors = ["Artyom"]
 
 [tool.poetry.dependencies]
 python = "^3.6"
+pyqt5 = "^5.13"
+pymongo = "^3.9"
 
 [tool.poetry.dev-dependencies]
 
