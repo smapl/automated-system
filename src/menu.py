@@ -9,27 +9,30 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton
 
+
 class Window_menu(QWidget):
     def setupUi_menu(self, Form):
         Form.setObjectName("Menu")
         Form.resize(469, 212)
         Form.setMaximumSize(QtCore.QSize(469, 212))
-        Form.setStyleSheet("QPushButton{\n"
-                            "    color: #fff;\n"
-                            "    background-color: rgb(71, 69, 69);\n"
-                            "    width: 40px;\n"
-                            "    height: 30px;\n"
-                            "    border-radius: 0px;\n"
-                            "}\n"
-                            "\n"
-                            "QPushButton::hover{\n"
-                            "    background-color: rgb(85, 87, 83);\n"
-                            "}\n"
-                            "\n"
-                            "*{\n"
-                            "    background-color: rgb(196, 183, 183);\n"
-                            "}\n"
-                            "")
+        Form.setStyleSheet(
+            "QPushButton{\n"
+            "    color: #fff;\n"
+            "    background-color: rgb(71, 69, 69);\n"
+            "    width: 40px;\n"
+            "    height: 30px;\n"
+            "    border-radius: 0px;\n"
+            "}\n"
+            "\n"
+            "QPushButton::hover{\n"
+            "    background-color: rgb(85, 87, 83);\n"
+            "}\n"
+            "\n"
+            "*{\n"
+            "    background-color: rgb(196, 183, 183);\n"
+            "}\n"
+            ""
+        )
         self.horizontalLayoutWidget = QtWidgets.QWidget(Form)
         self.horizontalLayoutWidget.setGeometry(QtCore.QRect(20, 50, 421, 91))
         self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
@@ -53,9 +56,9 @@ class Window_menu(QWidget):
         self.line.setObjectName("line")
         self.line_2 = QtWidgets.QFrame(Form)
         self.line_2.setGeometry(QtCore.QRect(10, 10, 441, 21))
-        self.line_2.setStyleSheet("QPushButton {\n"
-                                            "    background-color: rgb(136, 138, 133);\n"
-                                            "}")
+        self.line_2.setStyleSheet(
+            "QPushButton {\n" "    background-color: rgb(136, 138, 133);\n" "}"
+        )
         self.line_2.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_2.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_2.setObjectName("line_2")
@@ -69,5 +72,4 @@ class Window_menu(QWidget):
         self.pushButton.setText(_translate("Form", "Администратор"))
         self.pushButton_2.setText(_translate("Form", "Официант"))
         self.pushButton_3.setText(_translate("Form", "Гость"))
-
 

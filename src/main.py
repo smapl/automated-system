@@ -6,11 +6,11 @@ from admin import Window_admin
 from waiter import Window_waiter
 from guest import Window_guest
 
+
 class Window_main(QMainWindow, QWidget):
     def __init__(self):
         super().__init__()
         self.menu()
-
 
     def menu(self):
         self.menu_form = Window_menu()
@@ -25,7 +25,6 @@ class Window_main(QMainWindow, QWidget):
 
         self.menu_form.pushButton_3.clicked.connect(self.close)
         self.menu_form.pushButton_3.clicked.connect(self.guest)
-
 
     def admin(self):
         self.admin_form = Window_admin()
@@ -51,6 +50,6 @@ class Window_main(QMainWindow, QWidget):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    application = Window_main()  
+    application = Window_main()
     sys.exit(app.exec())
 
