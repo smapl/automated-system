@@ -29,7 +29,7 @@ class Window_menu(QWidget):
             "}\n"
             "\n"
             "*{\n"
-            "    background-color: rgb(196, 183, 183);\n"
+            "    background-color: rgb(151, 151, 151);\n"
             "}\n"
             ""
         )

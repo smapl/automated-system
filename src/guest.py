@@ -12,6 +12,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Window_guest(object):
     def setupUi_guest(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
+        MainWindow.setMinimumSize(QtCore.QSize(1109, 694))
         MainWindow.resize(1109, 694)
         MainWindow.setStyleSheet("background-color: rgb(221, 215, 215);")
         self.centralwidget = QtWidgets.QWidget(MainWindow)

@@ -12,8 +12,8 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Window_waiter(object):
     def setupUi_waiter(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.setMinimumSize(QtCore.QSize(1047, 706))
-        MainWindow.resize(1047, 706)
+        MainWindow.setMinimumSize(QtCore.QSize(1109, 694))
+        MainWindow.resize(1109, 694)
         MainWindow.setStyleSheet(
             "#tabwidget{\n" "background-color: rgb(208, 251, 179);\n" "}"
         )

@@ -15,9 +15,8 @@ class Window_admin(QWidget):
         MainWindow.setObjectName("Admin")
         # MainWindow.resize(1102, 694)
         # MainWindow.move(0, 0)
-        MainWindow.resize(1102, 694)
-        MainWindow.setMinimumSize(QtCore.QSize(1102, 694))
-        MainWindow.setMaximumSize(QtCore.QSize(1500, 800))
+        MainWindow.setMinimumSize(QtCore.QSize(1109, 694))
+        MainWindow.resize(1109, 694)
         MainWindow.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
         MainWindow.setTabletTracking(False)
         MainWindow.setStyleSheet(
