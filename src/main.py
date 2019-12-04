@@ -44,8 +44,8 @@ class Window_main(QMainWindow, QWidget):
         self.guest_form = Window_guest()
         self.guest_form.setupUi_guest(self)
         self.show()
-        self.guest_form.pushButton.clicked.connect(self.close)
-        self.guest_form.pushButton.clicked.connect(self.menu)
+        self.guest_form.pushButton_11.clicked.connect(self.close)
+        self.guest_form.pushButton_11.clicked.connect(self.menu)
 
 
 if __name__ == "__main__":

@@ -9,73 +9,78 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton
 
+
 class Window_admin(QWidget):
     def setupUi_admin(self, MainWindow):
         MainWindow.setObjectName("Admin")
-        #MainWindow.resize(1102, 694)
+        # MainWindow.resize(1102, 694)
         # MainWindow.move(0, 0)
         MainWindow.resize(1102, 694)
         MainWindow.setMinimumSize(QtCore.QSize(1102, 694))
         MainWindow.setMaximumSize(QtCore.QSize(1500, 800))
         MainWindow.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
         MainWindow.setTabletTracking(False)
-        MainWindow.setStyleSheet("QMainWindow {\n"
-                                        "    background-color: rgb(255, 245, 230);\n"
-                                        "}\n"
-                                        "\n"
-                                        "QTabWidget {\n"
-                                        "    font-size: 18px;\n"
-                                        "}")
+        MainWindow.setStyleSheet(
+            "QMainWindow {\n"
+            "background-color: rgb(221, 215, 215);"
+            "}\n"
+            "\n"
+            "QTabWidget {\n"
+            "    font-size: 18px;\n"
+            "}"
+        )
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.tabWidget = QtWidgets.QTabWidget(self.centralwidget)
         self.tabWidget.setGeometry(QtCore.QRect(10, 10, 1081, 671))
         self.tabWidget.setMinimumSize(QtCore.QSize(0, 0))
         self.tabWidget.setMaximumSize(QtCore.QSize(16777215, 16777215))
-        self.tabWidget.setStyleSheet("#tab_3 {\n"
-"    color: rgb(0, 0, 0);\n"
-"    background-color: rgb(225, 219, 245);\n"
-"    font-size: 15px;\n"
-"}\n"
-"\n"
-"#tab_2 {\n"
-"    color: rgb(0, 0, 0);\n"
-"    background-color: rgb(199, 240, 207);\n"
-"    font-size: 15px;\n"
-"}\n"
-"\n"
-"#tab {\n"
-"    color: rgb(0, 0, 0);\n"
-"    background-color: rgb(250, 216, 216);\n"
-"    font-size: 15px;\n"
-"}\n"
-"\n"
-"QLabel {\n"
-"    color: rgb(0, 0, 0);\n"
-"    font-size: 15px;\n"
-"}\n"
-"\n"
-"QRadioButton {\n"
-"    color: rgb(0, 0, 0);\n"
-"    font-size: 15px;\n"
-"}\n"
-"\n"
-"QLineEdit {\n"
-"    color: rgb(0, 0, 0);\n"
-"    font-size: 15px;\n"
-"}\n"
-"\n"
-"QLineEdit:focus {\n"
-"    border: 1px solid rgb(17, 3, 63);\n"
-"}\n"
-"QPushButton {\n"
-"    color: rgb(0, 0, 0);\n"
-"    background-color: rgb(255, 223, 194);\n"
-"    font-size: 15px;\n"
-"}\n"
-"QPushButton:hover {\n"
-"    background-color:rgb(216, 189, 155);\n"
-"}")
+        self.tabWidget.setStyleSheet(
+            "#tab_3 {\n"
+            "    color: rgb(0, 0, 0);\n"
+            "    background-color: rgb(151, 151, 151);\n"
+            "    font-size: 15px;\n"
+            "}\n"
+            "\n"
+            "#tab_2 {\n"
+            "    color: rgb(0, 0, 0);\n"
+            "    background-color: rgb(151, 151, 151);\n"
+            "    font-size: 15px;\n"
+            "}\n"
+            "\n"
+            "#tab {\n"
+            "    color: rgb(0, 0, 0);\n"
+            "    background-color: rgb(151, 151, 151);\n"
+            "    font-size: 15px;\n"
+            "}\n"
+            "\n"
+            "QLabel {\n"
+            "    color: rgb(0, 0, 0);\n"
+            "    font-size: 15px;\n"
+            "}\n"
+            "\n"
+            "QRadioButton {\n"
+            "    color: rgb(0, 0, 0);\n"
+            "    font-size: 15px;\n"
+            "}\n"
+            "\n"
+            "QLineEdit {\n"
+            "    color: rgb(0, 0, 0);\n"
+            "    font-size: 15px;\n"
+            "}\n"
+            "\n"
+            "QLineEdit:focus {\n"
+            "    border: 1px solid rgb(17, 3, 63);\n"
+            "}\n"
+            "QPushButton {\n"
+            "    color: rgb(0, 0, 0);\n"
+            "    background-color: rgb(255, 223, 194);\n"
+            "    font-size: 15px;\n"
+            "}\n"
+            "QPushButton:hover {\n"
+            "    background-color:rgb(216, 189, 155);\n"
+            "}"
+        )
         self.tabWidget.setObjectName("tabWidget")
         self.tab = QtWidgets.QWidget()
         self.tab.setObjectName("tab")
@@ -184,9 +189,11 @@ class Window_admin(QWidget):
         self.label_3.setObjectName("label_3")
         self.horizontalLayout_3.addWidget(self.label_3)
         self.dateEdit = QtWidgets.QDateEdit(self.horizontalLayoutWidget_3)
-        self.dateEdit.setStyleSheet("background-color: rgb(255, 255, 255);\n"
-"color: rgb(35, 0, 0);\n"
-"font-size: 15px;")
+        self.dateEdit.setStyleSheet(
+            "background-color: rgb(255, 255, 255);\n"
+            "color: rgb(35, 0, 0);\n"
+            "font-size: 15px;"
+        )
         self.dateEdit.setObjectName("dateEdit")
         self.horizontalLayout_3.addWidget(self.dateEdit)
         self.label_4 = QtWidgets.QLabel(self.tab_3)
@@ -398,8 +405,7 @@ class Window_admin(QWidget):
         self.horizontalLayout_18.addWidget(self.lineEdit_11)
         self.label_21 = QtWidgets.QLabel(self.tab_3)
         self.label_21.setGeometry(QtCore.QRect(600, 320, 121, 41))
-        self.label_21.setStyleSheet("\n"
-"font-size: 18px;")
+        self.label_21.setStyleSheet("\n" "font-size: 18px;")
         self.label_21.setObjectName("label_21")
         self.horizontalLayoutWidget_22 = QtWidgets.QWidget(self.tab_3)
         self.horizontalLayoutWidget_22.setGeometry(QtCore.QRect(600, 360, 361, 51))
@@ -472,14 +478,19 @@ class Window_admin(QWidget):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Admin"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Статистика"))
+        self.tabWidget.setTabText(
+            self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Статистика")
+        )
         self.label_9.setText(_translate("MainWindow", "Имя:"))
         self.label_18.setText(_translate("MainWindow", "Фамилия:"))
         self.label_24.setText(_translate("MainWindow", "ID сотрудника:"))
         self.label_25.setText(_translate("MainWindow", "Просмотр персонала"))
         self.pushButton_5.setText(_translate("MainWindow", "Найти"))
         self.pushButton_6.setText(_translate("MainWindow", "Выход"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "Просмотр персонала"))
+        self.tabWidget.setTabText(
+            self.tabWidget.indexOf(self.tab_2),
+            _translate("MainWindow", "Просмотр персонала"),
+        )
         self.label.setText(_translate("MainWindow", "Имя:"))
         self.label_2.setText(_translate("MainWindow", "Фамилия:"))
         self.label_3.setText(_translate("MainWindow", "Дата рождения:"))
@@ -511,6 +522,8 @@ class Window_admin(QWidget):
         self.pushButton.setText(_translate("MainWindow", "Добавить"))
         self.pushButton_2.setText(_translate("MainWindow", "Выход"))
         self.label_10.setText(_translate("MainWindow", "Добавление нового сотрудника"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("MainWindow", "Добавление персонала"))
-
+        self.tabWidget.setTabText(
+            self.tabWidget.indexOf(self.tab_3),
+            _translate("MainWindow", "Добавление персонала"),
+        )
 
