@@ -125,7 +125,7 @@ class Window_main(QMainWindow, QWidget):
         self.guest_form.pushButton.clicked.connect(lambda: view_eat("Пончик"))
         self.guest_form.pushButton_2.clicked.connect(lambda: view_eat("Тирамиссу"))
         self.guest_form.pushButton_3.clicked.connect(lambda: view_eat("Кекс"))
-        self.guest_form.pushButton_4.clicked.connect(lambda: view_eat("Чизкей"))
+        self.guest_form.pushButton_4.clicked.connect(lambda: view_eat("Чизкейк"))
         self.guest_form.pushButton_5.clicked.connect(lambda: view_eat("Круассан"))
         self.guest_form.pushButton_14.clicked.connect(
             lambda: formation_basket_eat(intermediate_snack_list)
