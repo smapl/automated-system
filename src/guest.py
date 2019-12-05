@@ -414,7 +414,7 @@ class Window_guest(object):
         MainWindow.setWindowTitle(_translate("MainWindow", "Guest"))
         self.pushButton.setText(_translate("MainWindow", "Пончик"))
         self.pushButton_5.setText(_translate("MainWindow", "Круассан"))
-        self.pushButton_4.setText(_translate("MainWindow", "Чизкей"))
+        self.pushButton_4.setText(_translate("MainWindow", "Чизкейк"))
         self.pushButton_2.setText(_translate("MainWindow", "Тирамиссу"))
         self.pushButton_3.setText(_translate("MainWindow", "Кекс"))
         self.pushButton_14.setText(_translate("MainWindow", "Выбрать"))
