@@ -153,6 +153,7 @@ class Window_guest(object):
                 self.listView = QtWidgets.QListView(self.tab)
                 self.listView.setGeometry(QtCore.QRect(360, 90, 351, 411))
                 self.listView.setObjectName("listView")
+                
                 self.verticalLayoutWidget = QtWidgets.QWidget(self.tab)
                 self.verticalLayoutWidget.setGeometry(QtCore.QRect(80, 180, 161, 281))
                 self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
@@ -461,11 +462,10 @@ class Window_guest(object):
                 for document in collection_info.find({}):
                         text_from_bd = document[key_bd]
                         item = QtGui.QStandardItem(text_from_bd)
-
+                
                 self.model = QtGui.QStandardItemModel()  
                 self.model.appendRow(item) 
                 self.listView.setModel(self.model)
-
                 intermediate_snack_list.append(name_snack)
                 print(intermediate_snack_list)
 
@@ -505,17 +505,20 @@ class Window_guest(object):
                 order = ""
                 print(dict(snack))
                 print(dict(drink))
+                order_list = []
                 for _ in drink:
-                        order += f"{str(drink[_])} x {_} " 
+                        order = f"{str(drink[_])} x {_} "
+                        order_list.append(order)
 
                 for _ in snack:
-                        order += f"{str(snack[_])} x {_} " 
-                
-                print(order)
-                item = QtGui.QStandardItem(order)
+                        order = f"{str(snack[_])} x {_} " 
+                        order_list.append(order)
+
                 self.model = QtGui.QStandardItemModel()  
-                self.model.appendRow(item)
-                self.listView_3.setModel(self.model)
+                for i in order_list:
+                        item = QtGui.QStandardItem(i)
+                        self.model.appendRow(item)
+                        self.listView_3.setModel(self.model)
 
         def formation_order(self):
                 global snack_list, drink_list

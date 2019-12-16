@@ -27,15 +27,15 @@ def connect():
         "espresso": "information about espresso",
     }
 
-    #information_about.insert_one(data)
+    # information_about.insert_one(data)
 
-    for collection in information_about.find({}):
-        print(collection)
+    #for collection in information_about.find({}):
+    #    print(collection)
     
-    for document in information_about
+    for document in information_about.find({}):
+        print(document)
 
-    #print(db.collection_names({}))
-    #db.information_about.drop()
+    # db.information_about.drop()
 
 
 connect()
