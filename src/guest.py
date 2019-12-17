@@ -500,12 +500,15 @@ class Window_guest(object):
                 intermediate_drink_list = []
 
         def view_order(self):
+                global snack_list, drink_list, intermediate_drink_list, intermediate_snack_list
+
                 snack = dict(Counter(snack_list))
                 drink = dict(Counter(drink_list))
                 order = ""
                 print(dict(snack))
                 print(dict(drink))
                 order_list = []
+                
                 for _ in drink:
                         order = f"{str(drink[_])} x {_} "
                         order_list.append(order)
@@ -521,7 +524,7 @@ class Window_guest(object):
                         self.listView_3.setModel(self.model)
 
         def formation_order(self):
-                global snack_list, drink_list
+                global snack_list, drink_list, intermediate_drink_list, intermediate_snack_list
                 
                 snack = Counter(snack_list)
                 drink = Counter(drink_list)
