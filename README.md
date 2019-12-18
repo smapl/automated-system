@@ -6,3 +6,4 @@
 4) Осталось дописать файл admin.py, waiter.py и guest.py, а также связать GUI с бд.
 5) База данных будет noSQL, а конкретно mongoDB.
 6) В файле requirenments.txt находятся зависимости для работы над проектом (pymongo - для работы с бд, остальное для pyqt)
+7) https://drive.google.com/open?id=1ovPn7P8X3evXlSoiIcQA5NiHGG8j9iCJ ссылка на презентацию.
